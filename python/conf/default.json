@@ -1,0 +1,29 @@
+{
+  "project_name": "cyclon-rps",
+  "make_cmd": "make docker",
+  "dirs": {
+    "project": "../rps-cpp/"
+  },
+  "parameters": {
+    "rps_bootstrap_ips": 2,
+    "rps_args": "--debug={debug} --ip={ip} --name={name} --period={period} --gs={gs} --vs={vs} --bs_ips={bs_ips}",
+    "rps": {
+      "debug": 1,
+      "period": 1000,
+      "gs": 4,
+      "vs": 8
+    },
+    "only_stop": true
+  },
+  "images": {
+    "rps": "rps-cpp-img"
+  },
+  "net": {
+    "name": "rps-cpp-net",
+    "addr": "137.70.0.0/16"
+  },
+  "experiment": {
+    "sleep_time": 120,
+    "n_devices": 20
+  }
+}
