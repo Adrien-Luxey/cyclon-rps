@@ -10,7 +10,7 @@ C++ implementation of the Cyclon Random Peer Sampling (RPS) algorithm with threa
 All of the C++ source code is in `/rps-cpp/src`. There are no external dependencies. So you can build it right away from `/rps-cpp` with:
 
 	/rps-cpp $ make 
-	/rps-cpp $ ./build/rps-cpp --help 
+	/rps-cpp $ ./build/rps-cpp --help=1
 	The best (the only) implementation of Cyclon in C++!
 	Usage:
 	  rps-cpp [OPTION...]
