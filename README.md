@@ -15,7 +15,14 @@ All of the C++ source code is in `/rps-cpp/src`. There are no external dependenc
 	Usage:
 	  rps-cpp [OPTION...]
 
-	  [...]
+	      --help arg    Print help
+	  -d, --debug arg   Enable debugging
+	  -p, --period arg  The RPS period (ms)
+	      --vs arg      The RPS view size
+	      --gs arg      The RPS gossip size
+	      --ip arg      This node's IP
+	      --name arg    This node's ID
+	      --bs_ips arg  Other nodes' IPs for bootstrap (comma separated)
 
 ### Deploying in a local Docker network
 
