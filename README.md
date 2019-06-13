@@ -1,6 +1,6 @@
-# Cyclon RPS C++
+# Cyclon RPS
 
-C++ implementation of the Cyclon Random Peer Sampling (RPS) algorithm in C++ with threads. 
+C++ implementation of the Cyclon Random Peer Sampling (RPS) algorithm with threads. 
 
 > S. Voulgaris, D. Gavidia, and M. van Steen, “CYCLON: Inexpensive Membership Management for Unstructured P2P Overlays,” Journal of Network and Systems Management, vol. 13, no. 2, pp. 197–217, Jun. 2005.
 
