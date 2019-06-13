@@ -75,7 +75,7 @@ You can add tests alonside the code. Check any `*_test.cpp` file in `/rps-cpp/sr
 * `/rps-cpp/src/marshal` contains primitive to marshal primitive types to `std::ostream`, and to unmarshal the same types from `std::istream`;
 * `/rps-cpp/src/net` provides a `TCPListener` class and a `TCPConnection` class. The latter is a `std::streambuf`, meaning you can build `std::istream` and `std::ostream` out of it:
 * `/rps-cpp/src/utils` contains misc stuff;
-* `/rps-cpp/src/rps` contains the RPS algorithm in. `Descriptor` and `View` are data structures and are un/marshalable using streams.
+* `/rps-cpp/src/rps` contains the RPS algorithm. `Descriptor` and `View` are data structures and are un/marshalable using streams.
 
 
 #### Dependencies
