@@ -28,7 +28,7 @@ All of the C++ source code is in `/rps-cpp/src`. There are no external dependenc
 
 You will need Python3 and Docker (preferably with the ability to launch it using your current user).
 
-In `/python`, you will find `run_experiment.py`, which runs several `rps-cpp` Docker containers to demonstrate that the algorithm work. You will need to build the *builder* image first (its job is to compile `rps-cpp` inside a container, such that we simply drop the resulting binary inside the same kind of Docker image to have a working `rps-cpp` container):
+In `/python`, you will find `run_experiment.py`, which runs several `rps-cpp-img` Docker containers to demonstrate that the algorithm work. You will need to build the *builder* image first (its job is to compile `rps-cpp` inside a container, such that we simply drop the resulting binary inside the same kind of Docker image to have a working `rps-cpp` container):
 
 	# Build the builder
 	/rps-cpp $ make docker-builder 
@@ -38,7 +38,7 @@ In `/python`, you will find `run_experiment.py`, which runs several `rps-cpp` Do
 	REPOSITORY          TAG                 [...]           SIZE
 	rps-cpp-img         latest              [...]           176MB
 
-There are python dependencies though, which are listed in `/python/requirements.txt`. You can install them locally using e.g. [virtualenv](https://virtualenv.pypa.io/en/stable/):
+There are python dependencies listed in `/python/requirements.txt`. You can install them locally using e.g. [virtualenv](https://virtualenv.pypa.io/en/stable/):
 
 	# Initializes a virtualenv in /python/env (do this only once)
 	/python $ virtualenv env
@@ -53,7 +53,7 @@ Run the experiment using:
 
 Check some logs in another window if you want:
 
-	$ docker logs -f d0000
+	$ docker logs -f cyclon-rps_d0000
 
 You're all set.
 
